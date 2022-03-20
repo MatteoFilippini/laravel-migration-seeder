@@ -10,6 +10,13 @@
 
 <body>
     <h1>Trains</h1>
+    @foreach($trains as $train)
+    <h3>Treno: {{ $train->num_train }}</h3>
+    <ul>
+        <li>Compagnia: {{ $train->company }}</li>
+        <li>N° carrozze: {{ $train->carriages }}</li>
+    </ul>
+    @endforeach
 </body>
 
 </html>
