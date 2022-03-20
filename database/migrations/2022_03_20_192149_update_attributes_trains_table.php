@@ -26,7 +26,7 @@ class UpdateAttributesTrainsTable extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->date('end_time');
+            $table->date('end_time')->change();
         });
     }
 }
